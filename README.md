@@ -8,11 +8,11 @@
 
 Для случайной величины с бета-распределением $X\sim B(\alpha, \beta)$ Плотность распределения:
 
-$f_X(x) = \frac{1}{B(\alpha, \beta)}\cdot x^{\alpha-1}(1-x)^{\beta - 1},\; где\,B(\alpha, \beta) = \int_0^1 x^{\alpha - 1}(1-x)^{\beta-1}dx$
+$$f_X(x) = \frac{1}{B(\alpha, \beta)}\cdot x^{\alpha-1}(1-x)^{\beta - 1},\; где\,B(\alpha, \beta) = \int_0^1 x^{\alpha - 1}(1-x)^{\beta-1}dx$$
 
 Квантиль заданной вероятности находится из:
 
-$p = P[x<q_p] = \int_0^{q_p} f_X(x)dx = \frac{B_{q_p}(\alpha, \beta)}{B(\alpha, \beta)} = I_{q_p}(\alpha, \beta) \Rightarrow q_p = I^{-1}_p(\alpha, \beta)$
+$$p = P[x < q_{p}] = \int_0^{q_p} f_X(x)dx = \frac{B_{q_{p}}(\alpha, \beta)}{B(\alpha, \beta)} = I_{q_{p}}(\alpha, \beta) \Rightarrow q_p = I^{-1}_p(\alpha, \beta)$$
 
 Данная принимает значения $\alpha, \beta$ из файла Excel, уровня вероятности $p$ от пользователя и проводит расчёт $q_p = I_{q_p}^{-1}(\alpha, \beta)$ (обратной регуляризованной бета-функции). 
 
